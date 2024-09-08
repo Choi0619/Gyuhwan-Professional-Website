@@ -49,24 +49,26 @@ body {
   background-attachment: fixed;
 }
 
-/* Header Styling (Text Only) */
 .main-title {
   font-family: 'Monoton', cursive;
-  font-size: 5rem;  /* Made it more impactful */
-  color: #333;
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);  /* More shadow for depth */
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 2px 2px #aaa;
   margin-bottom: 10px;
+}
+
+.header {
   text-align: center;
+  padding: 40px 0;
+  background-color: #333;
+  color: #fff;
 }
 
 .intro-text {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 1.3rem;  /* Slightly smaller font */
-  color: #555;
-  text-align: center;
-  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ddd;
   line-height: 1.8;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 /* Add spacing between sections */

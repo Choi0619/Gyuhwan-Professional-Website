@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 3rem;
+  color: #333;
+  text-shadow: 2px 2px #aaa;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.name {
+  padding: 40px 0px 20px 0px;
+  font-size: 2.0em;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+h2 {
+  color: brown;
+  text-decoration: underline;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: purple;
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 16px;
+  padding: 10px 0px 15px 0px;
+  line-height: 1.6;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'NanumGothic', sans-serif;
+  color: #666;
+  padding: 0;
+  width: 980px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header Styling (Text Only) */
+.main-title {
+  font-family: 'Monoton', cursive;
+  font-size: 5rem;  /* Made it more impactful */
+  color: #333;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);  /* More shadow for depth */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.intro-text {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.3rem;  /* Slightly smaller font */
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.8;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add spacing between sections */
+.about-me, .work-experience, .skills, .web-experience {
+  margin: 40px 0;
+}
+
+/* Flexbox for About Me */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.profile-image img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+/* About Me Card */
+.about-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Web Development Experience Card */
+.web-experience-card {
+  background-color: rgba(240, 240, 240, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 90, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -20px;
+  transition: all 0.25s ease;
+}
+
+.web-experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.web-experience-card h3 {
+  font-size: 1.5rem;
+  color: purple;
+}
+
+.web-experience-card p {
+  font-size: 1.1rem;
+}
+
+/* Work Experience Cards in 2x2 Grid */
+.experience-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.experience-card {
+  background-color: rgba(250, 250, 250, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.25s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skills List */
+.skill-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1em;
+}
+
+.skill-list li {
+  background-color: rgba(250,250,250,0.2);
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-left: 5px solid #6441a5;
+  transition: background-color 0.3s;
+}
+
+.skill-list li:hover {
+  background-color: rgba(250,250,250,0.5);
+}
+
+.skill-list li strong {
+  font-weight: bold;
+}
+
+/* Find Me Online Section */
+.find-me-online {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.find-me-online a {
+  color: blue;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 800px) {
+  .experience-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .profile-image img {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-info {
+  margin: 40px 0;
+}
+
+.contact-info-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+.contact-text strong {
+  font-size: 1.2em;
+  color: purple;
+}
+
+.contact-text p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #333;
+}

@@ -2,40 +2,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Monoton', cursive;
-  font-size: 3rem;
-  color: #333;
-  text-shadow: 2px 2px #aaa;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.name {
-  padding: 40px 0px 20px 0px;
-  font-size: 2.0em;
-  font-family: Georgia, serif;
-  font-weight: bold;
-}
-
-h2 {
-  color: brown;
-  text-decoration: underline;
-  font-size: 1.8em;
-  margin-bottom: 20px;
-}
-
-h3 {
-  color: purple;
-  font-size: 1.3em;
-}
-
-p {
-  font-size: 16px;
-  padding: 10px 0px 15px 0px;
-  line-height: 1.6;
-}
-
 body {
   line-height: 1.5;
   font-family: 'NanumGothic', sans-serif;
@@ -49,14 +15,7 @@ body {
   background-attachment: fixed;
 }
 
-.main-title {
-  font-family: 'Monoton', cursive;
-  font-size: 3.5rem;
-  color: #fff;
-  text-shadow: 2px 2px #aaa;
-  margin-bottom: 10px;
-}
-
+/* Header */
 .header {
   text-align: center;
   padding: 40px 0;
@@ -64,19 +23,61 @@ body {
   color: #fff;
 }
 
+.main-title {
+  font-family: 'Monoton', cursive;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px #aaa;
+  margin-bottom: 10px;
+}
+
 .intro-text {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #ddd;
   line-height: 1.8;
   margin-top: 10px;
 }
 
-/* Add spacing between sections */
-.about-me, .work-experience, .skills, .web-experience {
-  margin: 40px 0;
+/* General Header Styling (h2, h3) */
+h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.2rem;
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
 }
 
-/* Flexbox for About Me */
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.8rem;
+  color: #5a1d99;
+  margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1.1rem;
+  padding: 10px 0px 15px 0px;
+  line-height: 1.8;
+}
+
+/* Add spacing between sections */
+.about-me, .work-experience, .skills, .web-experience, .contact-info, .find-me-online {
+  margin: 50px 0;
+}
+
+/* About Me Section */
+.about-me {
+  background-color: rgba(250, 250, 250, 0.9);
+  border-left: 6px solid #333;
+  padding: 30px;
+  border-radius: 10px;
+}
+
 .about-content {
   display: flex;
   justify-content: space-between;
@@ -91,19 +92,12 @@ body {
 .profile-image img {
   max-width: 200px;
   border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Me Card */
-.about-card {
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Web Development Experience Card */
+/* Web Development Experience Section */
 .web-experience-card {
-  background-color: rgba(240, 240, 240, 0.9);
+  background-color: rgba(230, 230, 250, 0.9);
   padding: 20px;
   border-radius: 15px;
   box-shadow: rgba(50, 50, 90, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -20px;
@@ -115,15 +109,16 @@ body {
 }
 
 .web-experience-card h3 {
-  font-size: 1.5rem;
-  color: purple;
+  font-size: 1.6rem;
+  color: #5a1d99;
 }
 
 .web-experience-card p {
   font-size: 1.1rem;
+  color: #444;
 }
 
-/* Work Experience Cards in 2x2 Grid */
+/* Work Experience Cards */
 .experience-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -131,10 +126,10 @@ body {
 }
 
 .experience-card {
-  background-color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.25s ease;
 }
 
@@ -142,19 +137,38 @@ body {
   transform: translateY(-5px);
 }
 
-/* Skills List */
+.experience-card h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.experience-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Skills Section */
+.skills {
+  background-color: rgba(245, 245, 245, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .skill-list {
   list-style-type: none;
   padding-left: 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .skill-list li {
   background-color: rgba(250,250,250,0.2);
   padding: 10px 20px;
-  margin: 10px 0;
   border-left: 5px solid #6441a5;
   transition: background-color 0.3s;
+  border-radius: 5px;
 }
 
 .skill-list li:hover {
@@ -165,19 +179,56 @@ body {
   font-weight: bold;
 }
 
-/* Find Me Online Section */
+/* Contact Info Section */
+.contact-info {
+  background-color: rgba(240, 248, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.contact-text strong {
+  font-size: 1.2em;
+  color: #5a1d99;
+}
+
+.contact-text p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Find Me Online */
 .find-me-online {
   text-align: center;
-  margin-top: 40px;
 }
 
 .find-me-online a {
-  color: blue;
+  font-size: 1.2rem;
+  color: #3498db;
   text-decoration: underline;
-  font-size: 1.2em;
 }
 
-/* Media Query for responsiveness */
+.find-me-online a:hover {
+  color: #2c3e50;
+}
+
+/* Media Queries */
 @media (max-width: 800px) {
   .experience-cards-grid {
     grid-template-columns: 1fr;
@@ -190,39 +241,4 @@ body {
   .profile-image img {
     margin-bottom: 20px;
   }
-}
-
-.contact-info {
-  margin: 40px 0;
-}
-
-.contact-info-card {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-}
-
-.contact-item img {
-  width: 30px;
-  margin-right: 15px;
-}
-
-.contact-text strong {
-  font-size: 1.2em;
-  color: purple;
-}
-
-.contact-text p {
-  margin: 5px 0;
-  font-size: 1.1em;
-  color: #333;
 }

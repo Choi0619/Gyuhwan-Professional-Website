@@ -1,6 +1,6 @@
 # 🌐 Gyuhwan's Professional Website
 
-This repository contains the code for **Gyuhwan Choi's personal website**, showcasing my background, skills, and work experience.
+This repository contains the code for **Gyuhwan Choi's personal website**, showcasing my background, skills, and work experience. The website was developed as part of **ITMD-541** coursework.
 
 ## 📄 Overview
 The website includes:
@@ -15,3 +15,6 @@ The website includes:
 - **Responsive design** for all devices.
 - Modern **card layout** with smooth hover effects.
 - Clean and professional **typography**.
+
+## 📚 Created For
+This website was built as part of the **ITMD-541** course at **Illinois Institute of Technology**, showcasing web development skills and professional background.

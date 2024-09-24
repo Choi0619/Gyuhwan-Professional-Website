@@ -2,10 +2,10 @@
 
 #flex-section1 ul {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 50px;
   }
 
 /* end Flexbox Part 1 */
